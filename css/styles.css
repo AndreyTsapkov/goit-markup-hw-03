@@ -178,6 +178,7 @@ img {
   line-height: 1.17;
   text-align: center;
   color: var(--second-title-color);
+  padding-bottom: 50px;
 }
 /* -------------FEATURES------------- */
 .features-list {
@@ -213,7 +214,6 @@ img {
 .works-list {
   display: flex;
   flex-direction: row;
-  padding-top: 50px;
 }
 .works-item {
   margin-right: 30px;
