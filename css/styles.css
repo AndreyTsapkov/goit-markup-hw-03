@@ -323,7 +323,6 @@ img {
   margin-left: 30px;
   margin-bottom: 30px;
   text-align: left;
-  border: 1px solid #eee;
 }
 .our-projects-title {
   font-style: normal;
@@ -338,4 +337,5 @@ img {
 }
 .our-projects-item-bottom {
   padding: 20px 24px;
+  border: 1px solid #eee;
 }
