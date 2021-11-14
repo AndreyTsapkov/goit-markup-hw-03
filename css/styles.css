@@ -65,6 +65,7 @@ img {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -282,7 +283,6 @@ img {
 
 /* -------------PORTFOLIO------------- */
 .border {
-  border-bottom: 1px solid #ececec;
 }
 .filter {
   display: flex;
