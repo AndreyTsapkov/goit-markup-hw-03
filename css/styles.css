@@ -17,8 +17,11 @@ body {
   background-color: #fff;
   color: var(--main-text-color);
   font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
   letter-spacing: 0.03em;
 }
+
 p,
 h1,
 h2,
@@ -57,11 +60,19 @@ img {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 /* -------------HEADER------------- */
 .header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -116,27 +127,27 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-text-color);
-  margin-right: 70px;
 }
 .logo-header {
+  margin-right: 93px;
+}
+.logo-header2 {
   color: #000;
 }
 .logo-footer {
   color: var(--main-title-color);
 }
+
 /* -------------HERO------------- */
 .hero {
   background-color: var(--second-background-color);
-}
-.hero-container {
+  padding: 200px 0;
   max-width: 1600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 200px 0px;
+  margin: 0 auto;
+  text-align: center;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -145,7 +156,7 @@ img {
   text-transform: uppercase;
   color: var(--main-title-color);
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .hero-button {
   font-family: inherit;
@@ -178,7 +189,7 @@ img {
   line-height: 1.17;
   text-align: center;
   color: var(--second-title-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 /* -------------FEATURES------------- */
 .features-list {
@@ -196,15 +207,13 @@ img {
 
 .features-title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-transform: uppercase;
   color: var(--second-title-color);
 
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .featured-text {
-  font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
 }
 /* -------------WORKS------------- */
@@ -213,7 +222,6 @@ img {
 }
 .works-list {
   display: flex;
-  flex-direction: row;
 }
 .works-item {
   margin-right: 30px;
@@ -227,13 +235,13 @@ img {
 /* -------------TEAM------------- */
 .team-list {
   display: flex;
-  flex-direction: row;
   margin-left: -30px;
 }
 .team-item {
+  background-color: var(--main-background-color);
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  /* margin-right: 30px; */
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   text-align: center;
@@ -250,23 +258,19 @@ img {
 }
 .team-text {
   line-height: 1.1875;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 /* -------------FOOTER------------- */
 .footer {
   background-color: var(--second-background-color);
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  padding: 60px 0;
 }
-.footer-container {
-  padding-top: 60px;
-}
+
 .address {
   font-style: normal;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-top: 20px;
 }
 .address-item {
   margin-bottom: 10px;
@@ -286,7 +290,7 @@ img {
 }
 .filter {
   display: flex;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .filter-item:not(:last-child) {
@@ -322,7 +326,6 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-  text-align: left;
 }
 .our-projects-title {
   font-style: normal;
@@ -333,9 +336,12 @@ img {
   color: var(--second-title-color);
 }
 .our-projects-text {
+  font-weight: 400;
   line-height: 1.875;
 }
 .our-projects-item-bottom {
   padding: 20px 24px;
-  border: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
